@@ -1,0 +1,52 @@
+@mixin ff($name, $path, $weight, $style) {
+
+    @font-face { 
+        font-family: $name;
+        src: url('#{$path}.woff2') format('woff2'),
+            url('#{$path}.ttf') format('ttf'),
+            url('#{$path}.woff') format('woff');
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin media($media) {
+
+    @if $media == w1366 {
+        @media only screen and (max-width: 1366px) { @content; }
+    }
+
+    @else if $media == w1280 {
+        @media only screen and (max-width: 1280px) { @content; }
+    }
+
+    @else if $media == w1024 {
+        @media only screen and (max-width: 1024px) { @content; }
+    }
+
+    @else if $media == w768 {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+
+    @else if $media == w500 {
+        @media only screen and (max-width: 500px) { @content; }
+    }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}

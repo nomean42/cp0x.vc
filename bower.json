@@ -1,0 +1,19 @@
+{
+  "name": "new_project",
+  "version": "1.0.0",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "reset-css": "^2.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+$trans: all 0.3s ease;
+$side-padding-pc: 30px;
+$side-padding-mobile: 15px;
+$max-width-value: 1160px;
+$max-width: calc(#{$max-width-value} + 2 * #{$side-padding-pc});
+$min-width: 320px;
+
+// $color-main--lightest: #CBF3BF;
+// $color-main--lighten:  #ACEF97;
+// $color-main--light:    #74EA4F;
+// $color-main:           #3FD411;
+// $color-main--dark:     #39BA11;
+// $color-main--darken:   #329F11;
+// $color-main--darkest:  #184B09;

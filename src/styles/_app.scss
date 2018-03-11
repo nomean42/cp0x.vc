@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position: relative;
+    line-height: 1.5;
+    min-width: $min-width;
+}
