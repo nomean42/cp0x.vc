@@ -185,8 +185,8 @@ gulp.task('build', [
     'fonts',
     'pug',
     'sass',
-    'scripts',
-    'lint',
+    // 'scripts',
+    // 'lint',
     'vendor',
     // 'svgSpriteBuild'
 ]);
@@ -202,9 +202,9 @@ gulp.task('watch', function() {
         gulp.start('sass');
     });
 
-    watch([folders.src + '/scripts/**/*.js'], function() {
-        gulp.start(['lint', 'scripts']);
-    });
+    // watch([folders.src + '/scripts/**/*.js'], function() {
+    //     gulp.start(['lint', 'scripts']);
+    // });
 
     // watch(folders.src + '/img/slide5/**/*.svg', function() {
     //     gulp.start('svgSpriteBuild');
