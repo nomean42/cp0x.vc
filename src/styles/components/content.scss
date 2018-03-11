@@ -1,0 +1,25 @@
+.content {
+    background-color: $gray-darkest;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    height: 100%;
+
+    @include media(w600) {
+
+        br {
+            display: none;
+        }
+    }
+
+    @media (max-height: 300px) {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    &__container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+}

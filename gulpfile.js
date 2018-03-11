@@ -44,7 +44,8 @@ const gulp = require('gulp'),
     typograf = require('gulp-typograf'),
     eslint = require('gulp-eslint'),
     devip = require('dev-ip'),
-    changed = require('gulp-changed');
+    changed = require('gulp-changed'),
+    imagemin = require('gulp-imagemin'),
     webpack = require("webpack-stream");
 
 console.log("ip list: " + devip()); // show all ip list. Need for browsersync host option
@@ -101,7 +102,7 @@ gulp.task('vendor', function () {
 
 
 gulp.task('pug', function() {
-    gulp.src(folders.src + '/pages/*.pug')
+    gulp.src(folders.src + '/views/*.pug')
         .pipe(pug({
             pretty: true
         }))
@@ -117,8 +118,9 @@ gulp.task('sass', function () {
         .pipe(wait(500))
         .pipe(sourcemaps.init())
             .pipe(sass({
-                includePaths: [folders.src + '/styles/', folders.src + '/components/'],
-                importer: moduleImporter()
+                includePaths: [folders.src + '/styles/'],
+                importer: moduleImporter(),
+                outputStyle: 'compressed'
             })
             .on('error', sass.logError))
             .pipe(prefix("last 3 version", "> 1%", "ie 8", "ie 7"))
@@ -132,6 +134,12 @@ gulp.task('img', function() {
     gulp.src([folders.src + '/img/**/*.png', folders.src + '/img/**/*.jpg', folders.src + '/img/**/*.svg'])
         .pipe(imagemin())
         .pipe(gulp.dest(folders.build + '/img'))
+});
+
+
+gulp.task('fonts', function () {
+    gulp.src([folders.src + '/fonts/**/*.*'])
+        .pipe(gulp.dest(folders.build + '/fonts'))
 });
 
 
@@ -174,6 +182,7 @@ gulp.task('svgSpriteBuild', function () {
 
 gulp.task('build', [
     'img',
+    'fonts',
     'pug',
     'sass',
     'scripts',

@@ -1,8 +1,19 @@
 extends layouts/_default_layout.pug
 
 block vars
-    - var title = 'Main'
+    - var title = 'cp0x'
 
 block content
-    +container().
-        1
+    .content
+        .container.content__container
+            div
+                h1.text-white
+                    |cp
+                    span.text-blue.
+                        0
+                    |x
+                p.fw-light.text-gray.
+                    We invest in early stage blockchain startups<br> and decentralized protocols.
+            div
+                a(href="mailto:info@cp0x.com").fw-light.
+                    Contact us

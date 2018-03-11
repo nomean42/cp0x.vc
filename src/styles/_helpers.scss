@@ -1,24 +1,39 @@
 .fw-bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .fw-med {
-	font-weight: 500;
+    font-weight: 500;
 }
 
 .fw-reg {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .fw-light {
-	font-weight: 300;
+    font-weight: 300;
 }
 
 .ta-center {
-	text-align: center;
+    text-align: center;
 }
 
 .tt-uppercase {
-	text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.text {
+
+    &-white {
+        color: white;
+    }
+
+    &-blue {
+        color: $blue;
+    }
+
+    &-gray {
+        color: $gray;
+    }
 }
 

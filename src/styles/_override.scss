@@ -1,0 +1,16 @@
+a {
+    transition: $trans;
+    color: $blue;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        border-bottom: 1px solid currentColor
+    }
+
+    &:focus,
+    &:visited {
+        color: $blue;
+    }
+}
