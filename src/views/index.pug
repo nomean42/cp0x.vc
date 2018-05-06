@@ -1,19 +1,23 @@
 extends layouts/_default_layout.pug
 
+include ./components/crypto-list.pug
+
 block vars
-    - var title = 'cp0x'
+  -
+    var title = 'cp0x';
 
 block content
-    .content
-        .container.content__container
-            div
-                h1.text-white
-                    |cp
-                    span.text-blue.
-                        0
-                    |x
-                p.fw-light.text-gray.
-                    The community of blockchain investors, developers, influencers and entrepreneurs.
-            div
-                a(href="mailto:info@cp0x.com").fw-light.
-                    Contact us
+  .content
+    .container.content__container
+      div.mb-16
+        .content__head.mb-18
+          h1.text-white.mb-0
+            |cp
+            span.text-blue.
+              0
+            |x
+          a(href="mailto:info@cp0x.com").fw-light.
+            Contact us
+        p.fw-light.text-gray.
+          The community of blockchain investors, developers, influencers and entrepreneurs.
+      +crypto-list

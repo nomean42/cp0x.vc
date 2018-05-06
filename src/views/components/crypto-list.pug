@@ -1,0 +1,154 @@
+include icon.pug
+
+mixin crypto-list
+  -
+    let items = [
+      {
+        href: 'https://aeternity.com/ru',
+        icon: 'aeternity'
+      },
+      {
+        href: 'https://www.bancor.network',
+        icon: 'bancor'
+      },
+      {
+        href: 'https://www.bitfinex.com/',
+        icon: 'bitfinex'
+      },
+      {
+        href: 'https://www.bitstamp.net/',
+        icon: 'bitstamp'
+      },
+      {
+        href: 'https://maidsafe.net/',
+        icon: 'maidsafe'
+      },
+      {
+        href: 'https://www.civic.com/',
+        icon: 'civic'
+      },
+      {
+        href: 'https://0xproject.com/ ',
+        icon: '0x'
+      },
+      {
+        href: 'https://aion.network/',
+        icon: 'aion'
+      },
+      {
+        href: 'https://blockstack.org/',
+        icon: 'blockstack'
+      },
+      {
+        href: 'https://dmarket.io/',
+        icon: 'dmarket'
+      },
+      {
+        href: 'https://dragonchain.com/',
+        icon: 'dragonchain'
+      },
+      {
+        href: 'https://token.dreamteam.gg/',
+        icon: 'dreamteam'
+      },
+      {
+        href: 'https://enigma.co/',
+        icon: 'enigma'
+      },
+      {
+        href: 'https://polkadot.network/#howitworks',
+        icon: 'polkadot'
+      },
+      {
+        href: 'https://akropolis.io/',
+        icon: 'acroplis'
+      },
+      {
+        href: 'https://aira.life/tokens/',
+        icon: 'aira'
+      },
+      {
+        href: 'https://www.augmate.io/',
+        icon: 'augmate'
+      },
+      {
+        href: 'https://icon.foundation/?lang=en',
+        icon: 'icon'
+      },
+      {
+        href: 'https://kyber.network/',
+        icon: 'kyber'
+      },
+      {
+        href: 'https://nebulas.io/',
+        icon: 'nebulas'
+      },
+      {
+        href: 'https://obsidianplatform.com/',
+        icon: 'obsidian'
+      },
+      {
+        href: 'https://theoceanx.com/',
+        icon: 'oceanx'
+      },
+      {
+        href: 'https://raiden.network/ ',
+        icon: 'raiden'
+      },
+      {
+        href: 'https://www.rchain.coop/',
+        icon: 'rchain'
+      },
+      {
+        href: 'https://republicprotocol.com/',
+        icon: 'republic'
+      },
+      {
+        href: 'http://www.sentinelcoins.com/',
+        icon: 'sentinel'
+      },
+      {
+        href: 'https://sonm.com/',
+        icon: 'sonm'
+      },
+      {
+        href: 'https://ico-telegram.org/',
+        icon: 'telegram'
+      },
+      {
+        href: 'https://tezos.com/',
+        icon: 'tezos'
+      },
+      {
+        href: 'https://www.todacoin.com/',
+        icon: 'toda'
+      },
+      {
+        href: 'https://www.traceto.io/',
+        icon: 'traceto'
+      },
+      {
+        href: 'https://www.trusttoken.com/',
+        icon: 'trusttoken'
+      },
+      {
+        href: 'https://wanchain.org/',
+        icon: 'wanchain'
+      },
+      {
+        href: 'https://request.network/#/',
+        icon: 'request'
+      },
+      {
+        href: 'https://www.zilliqa.com/',
+        icon: 'zilliqa'
+      }
+    ];
+
+  .crypto-list
+    each item in items
+      -
+        let link = item.href && item.href !== '' ? item.href : '/';
+      .crypto-list__item
+        a(href=link, target='_blank').crypto-list__link
+          +icon(item.icon).crypto-list__icon

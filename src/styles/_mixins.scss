@@ -12,7 +12,11 @@
 
 @mixin media($media) {
 
-    @if $media == w1366 {
+    @if $media == w1440 {
+        @media only screen and (max-width: 1440px) { @content; }
+    }
+
+    @else if $media == w1366 {
         @media only screen and (max-width: 1366px) { @content; }
     }
 

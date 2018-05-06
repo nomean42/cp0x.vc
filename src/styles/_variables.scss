@@ -1,11 +1,11 @@
 $trans: all 0.3s ease;
-$side-padding-pc: 30px;
-$side-padding-tablet: 15px;
-$max-width-value: 1024px;
+$side-padding-pc: 32px;
+$side-padding-tablet: 32px;
+$max-width-value: 960px;
 $max-width: calc(#{$max-width-value} + 2 * #{$side-padding-pc});
 $min-width: 320px;
 
 $blue: rgb(0, 255, 255);
 
-$gray: rgb(134, 146, 158);
+$gray: #83929F;
 $gray-darkest: #16161f;

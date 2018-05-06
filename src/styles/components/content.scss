@@ -1,14 +1,19 @@
 .content {
     background-color: $gray-darkest;
-    padding-top: 10vw;
-    padding-bottom: 10vw;
-    height: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    min-height: 100vh;
+
+    @include media(w1024) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     @include media(w600) {
 
-        br {
-            display: none;
-        }
+      br {
+          display: none;
+      }
     }
 
     @media (max-height: 300px) {
@@ -21,5 +26,11 @@
         flex-flow: column;
         justify-content: space-between;
         height: 100%;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 }

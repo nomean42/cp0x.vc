@@ -22,6 +22,6 @@ body {
     min-width: $min-width;
 
     @include media(w1024) {
-        font-size: 20px;
+        font-size: 16px;
     }
 }

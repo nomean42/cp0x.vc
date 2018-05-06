@@ -37,3 +37,13 @@
     }
 }
 
+@for $i from 0 through 20 {
+  .mb-#{$i} {
+    margin-bottom: #{$i * 4}px;
+
+    @include media(w1024) {
+      margin-bottom: #{$i * 2}px;
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Icon/maidsafe/normal">
+<g id="maidsafe">
+<path id="Shape" d="M 23.1399 0L 23.1399 21.411L 5.04615 10.9046C -0.266425 7.84652 0.131765 5.85122 0 1.59566L 18.6136 12.3685L 18.6136 2.5267L 23.1356 0L 23.1399 0Z" transform="translate(1 10.5745)" fill="#86929E"/>
+<path id="Shape_2" opacity="0.6" d="M 18.6136 22.9426L 0 12.1698L 18.0865 1.79512C 23.402 -1.26153 24.8688 0.0691462 28.7247 2.20344L 10.1068 12.9676L 18.6136 17.8892L 18.6136 22.9426Z" transform="translate(1 0.000356267)" fill="#86929E"/>
+<path id="Shape_3" opacity="0.4" d="M 0 10.7656L 18.6252 0L 18.6252 20.7508C 18.6252 27.0016 16.7573 27.533 13.0389 29.7933L 13.0389 8.37213L 4.56109 13.4096L 0 10.7656Z" transform="translate(11.1068 2.20235)" fill="#86929E"/>
+</g>
+</g>
+</g>
+</svg>
